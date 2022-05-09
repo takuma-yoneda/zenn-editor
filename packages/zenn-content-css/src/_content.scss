@@ -4,13 +4,18 @@ em {
   font-style: italic;
 }
 strong {
-  font-weight: 700;
+  font-weight: calc($font-weight + 100);
 }
 a {
-  color: #0f83fd;
+  // color: #0f83fd;
+  color: $c-link-color;
+  font-weight: calc($font-weight + 100);
+  text-decoration: inherit;
+  transition: color .2s;
 
-  &:hover {
-    text-decoration: underline;
+  &.selected, &:hover {
+    color: $c-mix-color;
+    // text-decoration: underline;
   }
 }
 p + p {
@@ -172,7 +177,7 @@ td {
   background: #fff;
 }
 th {
-  font-weight: 700;
+  font-weight: calc($font-weight + 100);
   background: $c-primary-bg;
 }
 code {

@@ -9,6 +9,14 @@ $c-gray-border: #cfdce6;
 $c-gray-border-lighter: rgba(92, 147, 187, 0.17);
 $c-contrast: #1a2638;
 
+// Taken from minima theme
+$c-link-color: #68f;
+$c-dark: #282828;
+$c-light: #ffffff;
+$c-mix-color: #949494;
+$font-weight: 300;
+
+
 $xs: 374px;
 $sm: 576px;
 $md: 768px;
@@ -30,7 +38,8 @@ $breakpoints: (
   & > *:first-child {
     margin-top: 0;
   }
-  line-height: 1.9;
+  // line-height: 1.9;
+  line-height: 1.65;
 
   @import './_content.scss';
   @import './_embed.scss';
